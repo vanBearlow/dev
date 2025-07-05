@@ -2,7 +2,7 @@
     "name": "Wasp Devcontainer",
     "build": {
         "dockerfile": "Dockerfile",
-        "context": ".."
+        "context": "."
     },
     "customizations": {
         "vscode": {
