@@ -17,7 +17,7 @@ RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /
 
 # Install Wasp CLI
 RUN curl -sSL https://get.wasp-lang.dev/installer.sh | bash \
-    && mv ~/.wasp/bin/wasp /usr/local/bin/wasp
+    && cp /root/.local/bin/wasp /usr/local/bin/wasp
 
 # Clean up
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
