@@ -49,5 +49,8 @@
     "postCreateCommand": "wasp version && node -v && docker --version",
     "runArgs": [
         "--privileged"
+    ],
+    "mounts": [
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
     ]
 }
